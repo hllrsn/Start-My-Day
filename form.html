@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import materialize.css-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+    <title>Start My Day - Settings</title>
+
+</head>
+
+<body>
+
+    <br>
+    <div class="container">
+        <div class="card-panel blue-grey darken-3 z-depth-5" id="enterinfo">
+            <h4 class="white-text center">User Settings</h4>
+                <p class="white-text center">Enter your info to get started.</p>
+            <br><br>
+            <form class="col s12">
+                <div class="input-field ">
+                    <input id="userName" type="text" class="validate">
+                    <label for="username"> Username: </label>
+
+                </div>
+
+                <div class="input-field">
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Name:</label>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="home" type="text" class="validate">
+                        <label for="home">Home Address:</label>
+                    </div>
+                </div>
+
+            <p class="teal-text text-lighten-1">Where are you going today?</p>
+                <div class="row" id="events">
+
+                    <div class="input-field col s4" id="eventRow0">
+                        <input placeholder="event" id="event0" type="text" class="validate">
+                        <label for="event">Event / Destination</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="address0" type="text" class="validate">
+                        <label for="address">Address</label>
+                    </div>
+
+                    <div class="input-field col s2">
+                        <input type="text" id="arrivalTime" class="timepicker">
+                        <i class="material-icons white-text">access_time</i>
+                        <label for="arrivalTime">Arrival Time</label>
+
+                        <script>
+                            $(document).ready(function () {
+                                $('.timepicker').timepicker();
+                            });
+                        </script>
+                    </div>
+                    <div id="add-remove-buttons">
+                    <a class="btn-floating btn-medium waves-effect waves-dark" id="addButton">
+                        <i class="material-icons">add</i>
+                    </a>
+                    <a class="btn-floating btn-medium waves-effect waves-dark" id="removeButton">
+                    <!-- red lighten-2 -->
+                        <i class="material-icons">remove</i>
+                    </a>
+                    </div>
+
+                </div>
+
+            </form>
+            <button class="btn waves-effect waves-light" id="submit">Submit
+                <i class="material-icons right">fingerprint</i>
+            </button>
+            
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./assets/appscript.js"></script>
+</body>
+
+</html>

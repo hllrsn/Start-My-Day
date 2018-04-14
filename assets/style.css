@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Chicle');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Yatra+One');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Amaranth');
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+
+
+body {
+  background: url("images/city-40.png") ghostwhite;
+  background-size: 100%;
+  background-attachment: fixed;
+  margin: 10px;
+  /*font-size: large;*/
+}
+
+
+h2 {
+  /*font-family: 'Merienda', cursive;*/
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+}
+
+
+h3 {
+  padding-left: 40px;
+  padding-top: 20px;
+  opacity: .6;
+}
+
+
+h4 {
+  /*font-family: 'Chicle', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Yatra One', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Amaranth', sans-serif;
+  font-family: 'Unica One', cursive;
+  font-family: 'Merienda', cursive;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;*/
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+  /*padding: 5px 0px 10px 0px;*/
+  /*margin: 0px;
+  padding: 0px;*/
+}
+
+
+.header-weather, .header-forecast {
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-weight: normal;
+  padding: 5px 0px 10px 0px;
+}
+
+
+#enterinfo {
+  padding: 2% 5% 4% 5%;
+
+}
+
+
+#welcome {
+  font-family: 'Merienda', cursive;
+  /*padding-bottom: 25px;*/
+}
+
+
+#map {
+  height: 500px;
+}
+
+
+#signin {
+  height: 150px;
+}
+
+
+#signin-buttons {
+  padding-top: 25px;
+  /*padding-left: 200px;
+  text-align: center;*/
+}
+
+
+#add-remove-buttons {
+  padding-top: 25px;
+  /*padding-left: 850px;
+  text-align: center;*/
+}
+
+
+.loginButton {
+  margin-right: 10px;
+  margin-left: 8px;
+}
+
+
+#addButton {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+
+#editButton {
+  margin-right: 29px;
+}
+
+
+#depart, #arrive, #map, #weatherZone, #weatherZoneWeek, #enterinfo, #signin, #card-div {
+  border-radius: 5px;
+}
+
+
+#depart, #arrive, #map, #weatherZone, #weatherZoneWeek {
+  font-size: large;
+}
+
+
+#weatherDiv {
+  text-align: center;
+  /* width: 128px; */
+  /*padding: 1px;*/
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+#card-div {
+  padding-left: 10%;
+  border-radius: 0px 0px 5px 5px;
+}
+
+
+.card-panel {
+  /*margin: 0;*/
+  margin: 2px;
+  padding: 15px;
+}
+
+
+#depart, #arrive {
+  /*font-weight: bold;*/
+  padding: 25px;
+}
+
+
+.card-title {
+  font-size: 30px !important;
+  /*font-size: xx-large !important;*/
+  /*font-weight: bold !important;*/
+}
+
+
+input[type=text] {
+  color: white;
+}
+
+
+#toast-container {
+  /*margin-top: 150%;*/
+  top: auto !important;
+  right: auto !important;
+  left: 22px;
+  /*bottom: 0%;
+  left: 40%;*/
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!--Import materialize.css-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://apis.google.com/js/api.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      gapi.load('auth2', function() {
+        // Library loaded.
+      });
+    </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhNrKK89X09tx7PxILd7CKgxLzbrQZRjs&callback=initMap"  type="text/javascript">
+        </script> -->
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+  <!-- <script src="https://apis.google.com/js/api.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      gapi.load('auth2', function() {
+        // Library loaded.
+      });
+    </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhNrKK89X09tx7PxILd7CKgxLzbrQZRjs&callback=initMap"  type="text/javascript">
+        </script> -->
+
+  <title>Start My Day</title>
+
+</head>
+
+<body>
+  
+  <!-- <div class="container"> -->
+  <!-- <div class="card-panel transparent z-depth-5"> -->
+    <h3 id="welcome" class="red-text text-lighten-5"></h3>
+    <!-- <br>
+    <a href="index.html" class="btn btn-small waves-effect waves-light teal darken-1" name="action" id="logoutButton">Log out</a> -->
+  </div>
+  
+
+  <br>
+  <div class="container" id="main-container">
+    
+    <div id="departure" class="row">
+
+        <div class="col s12 m6">
+          <h4 class="header grey-text text-darken-3 center">Depart</h4>
+          <div class="card-panel transparent z-depth-5" id="depart">
+            <span class="white-text">Departure time. (In development)</span>
+          </div>
+        </div>
+      
+        <div id= "arrival" class="col s12 m6">
+          <h4 class="header grey-text text-darken-3 center">Arrive</h4>
+          <div class="card-panel transparent z-depth-5" id="arrive">
+            <span class="white-text" id="arrivalLocation">Destination and arrival time.</span>
+          </div>
+        </div>
+      
+    </div>
+
+    
+    <br>
+    <div class="row">
+      
+        <div class="col s12">
+          <h4 class="header grey-text text-darken-3 center">Travel Conditions</h4>
+          <div class="card-panel transparent z-depth-5" id="map">
+            <span class="white-text">Map with driving conditions.</span>
+          </div>
+        </div>
+    
+    </div>
+
+
+    <br>
+    <div class="row">
+
+      <div id="weather" class="col s12">
+        <h4 class="header-weather blue-grey darken-3 z-depth-5 white-text center">Today's Weather</h4>
+        <div class="card-panel blue-grey darken-3 z-depth-5 white-text" id="card-div">
+          <!-- center-align, center -->
+            <div class="row">
+              <div id="weatherZone">
+              </div>
+              <!-- <span class="white-text">Today's weather summary.</span> -->
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div id="forecast" class="col s12">
+        <h4 class="header-forecast blue-grey darken-3 z-depth-5 white-text center">Forecast</h4>
+        <div class="card-panel blue-grey darken-3 z-depth-5 white-text" id="card-div">
+          <!-- center-align, center -->
+            <div class="row">
+              <div id="weatherZoneWeek">
+            </div>
+            <!-- <span class="white-text">This week's weather summary.</span> -->
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- grey-text text-darken-3
+    blue-grey darken-3 white-text z-depth-5 -->
+
+
+    <div class="fixed-action-btn">
+        <!-- <a href="index.html" class="btn-floating btn-small waves-effect waves-light blue darken-3 right" name="action" id="logoutButton"><i class="material-icons right">lock</i>Log out</a> -->
+
+        <a href="form.html" class="btn btn-small waves-effect waves-dark deep-orange darken-4 white-text right" id="editButton">
+          <i class="material-icons left">place</i>Edit</a>
+
+        <br><br>
+
+        <a href="index.html" class="btn btn-small waves-effect waves-dark teal right" name="action" id="logoutButton"><i class="material-icons left">lock</i>Log Out</a>
+    </div>
+
+    <!-- 
+    transparent
+    teal
+    teal darken-1
+    blue darken-3
+    light-blue darken-3
+    light-blue darken-4
+    grey
+    grey darken-1
+    blue-grey darken-1
+     -->
+  
+
+  <!-- container end -->
+  </div>
+
+
+
+  <script type="text/javascript" src="assets/formScript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+</body>
+
+</html>
